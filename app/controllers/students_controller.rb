@@ -15,7 +15,6 @@ class StudentsController < ApplicationController
     @student = Student.new
     @student.first_name = params[:first_name]
     @student.last_name = params[:last_name]
-    @student.save
     @student.created_at = Time.now
     @student.updated_at = @student.created_at
     @student.save
