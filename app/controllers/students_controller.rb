@@ -18,7 +18,7 @@ binding.pry
     @student.last_name = params[:last][:name]
     @student.save
 
-    redirect_to @student
+    redirect_to student_path(@student)
   end
 
 end
