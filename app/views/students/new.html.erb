@@ -1,1 +1,13 @@
-<!-- Create your form here -->
+<h1>Student Form</h1>
+
+<%= form_tag do %>
+  <label>First Name:</label><br>
+  <%= text_input_tag "first[name]" %>
+
+  
+  <%= submit_tag "submit" %>
+<% end %>
+
+
+
+
