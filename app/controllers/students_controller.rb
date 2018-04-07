@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
     @student.first_name = params[:first_name]
     @student.last_name = params[:last_name]
     @student.created_at = Time.now
-    @student.updated_at = @student.created_at
+    @student.updated_at = Time.now
     @student.save
     redirect_to @student
   end
